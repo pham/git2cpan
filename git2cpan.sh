@@ -167,8 +167,8 @@ case "${_cmd}" in
         git push --tags -u origin master
         assert
 
-		hint "$_repo/archive/v${_version}.tar.gz"
-		echo "Login to pause.perl.org and paste the URL under Files : Upload a file to CPAN"
+		hint "$_repo/archive/${_version}.tar.gz"
+		echo "Login to pause.perl.org upload the tarball"
         ;;
 
     *) echo "ERROR: Command '${_cmd}' not recognized"
